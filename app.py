@@ -1,6 +1,7 @@
 import pickle
 import base64
 import re
+import nltk
 from nltk.corpus import stopwords
 import streamlit as st
 from nltk.stem.porter import PorterStemmer
