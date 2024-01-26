@@ -45,7 +45,7 @@ def add_bg_from_local(image_file):
     )
 
 # Add background image
-add_bg_from_local("restaurant.jpg")
+add_bg_from_local("new_restaurant.jpg")
 
 def main():
   
