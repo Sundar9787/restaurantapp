@@ -15,6 +15,8 @@ The project includes the following steps:
 ### Saving and Loading the Model
 
 **1. Importing Libraries**.
+
+
 The following libraries are required for the project:
 
 ```python
@@ -32,12 +34,16 @@ from sklearn.metrics import confusion_matrix, accuracy_score
 import pickle
 ```
 2. Loading the Dataset
+
+   
 Load the dataset from a .tsv file:
 
 ```
 dataset = pd.read_csv('Restaurant_Reviews.tsv', delimiter='\t', quoting=3)
 ```
 3. Text Cleaning and Preprocessing
+
+
 Clean the text data by removing non-alphabetic characters, converting to lowercase, removing stopwords, and stemming:
 
 ```
@@ -55,6 +61,8 @@ for i in range(0, 1007):
     corpus.append(review)
 ```
 4. Creating the Bag of Words Model
+
+
 Transform the cleaned text data into feature vectors:
 
 ```
@@ -63,12 +71,16 @@ X = cv.fit_transform(corpus).toarray()
 y = dataset.iloc[:, -1].values
 ```
 5. Splitting the Dataset
+
+
 Split the dataset into training and testing sets:
 
 ```
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=0)
 ```
 6. Training the Logistic Regression Model
+
+
 Train a logistic regression model:
 
 ```
@@ -76,6 +88,8 @@ classifier = LogisticRegression(random_state=0)
 classifier.fit(X_train, y_train)
 ```
 7. Evaluating the Model
+
+
 Evaluate the model's performance using a confusion matrix and accuracy score:
 ```
 y_pred = classifier.predict(X_test)
@@ -84,6 +98,8 @@ print(cm)
 print('Accuracy:', accuracy_score(y_test, y_pred))
 ```
 8. Predicting New Reviews
+
+
 Predict whether a new review is positive or negative:
 ```
 def predict_review(review):
@@ -104,6 +120,8 @@ print(predict_review('I love this restaurant'))
 print(predict_review('I hate this restaurant'))
 ```
 9. Saving and Loading the Model
+
+
 Save the trained model and the CountVectorizer:
 
 ```
