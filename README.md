@@ -1,11 +1,11 @@
-### Sentiment Analysis of Restaurant Reviews using NLP
+# Sentiment Analysis of Restaurant Reviews using NLP
 This project involves performing sentiment analysis on restaurant reviews using Natural Language Processing (NLP) techniques. The aim is to classify reviews as positive or negative.
 
 ## Project Overview
 The project includes the following steps:
 
-# Importing Libraries
-# Loading the Dataset
+### Importing Libraries
+### Loading the Dataset
 Text Cleaning and Preprocessing
 Creating the Bag of Words Model
 Splitting the Dataset
