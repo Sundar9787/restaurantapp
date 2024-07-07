@@ -6,23 +6,14 @@ The project includes the following steps:
 
 ### Importing Libraries
 ### Loading the Dataset
-Text Cleaning and Preprocessing
-Creating the Bag of Words Model
-Splitting the Dataset
-Training the Logistic Regression Model
-Evaluating the Model
-Predicting New Reviews
-Saving and Loading the Model
-Prerequisites
-Ensure you have the following libraries installed:
+### Text Cleaning and Preprocessing
+### Creating the Bag of Words Model
+### Splitting the Dataset
+### Training the Logistic Regression Model
+### Evaluating the Model
+### Predicting New Reviews
+### Saving and Loading the Model
 
-bash
-Copy code
-pip install numpy pandas matplotlib scikit-learn nltk
-Dataset
-The dataset used is Restaurant_Reviews.tsv, which contains a collection of restaurant reviews and their corresponding sentiment labels.
-
-How to Use
 1. Importing Libraries
 The following libraries are required for the project:
 
