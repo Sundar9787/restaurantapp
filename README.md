@@ -14,11 +14,10 @@ The project includes the following steps:
 ### Predicting New Reviews
 ### Saving and Loading the Model
 
-1. Importing Libraries
+**1. Importing Libraries**
 The following libraries are required for the project:
 
-python
-Copy code
+```python
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
